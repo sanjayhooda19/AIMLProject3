@@ -21,6 +21,7 @@ Housing - Not significat difference between customers have mortagage loan or not
 Contact - For the termdeposit the bank was successful to sell the product to cellphone users vs telephone users
 
 To support the above observations following are the main charts
+
 ![Age vs Term deposit](images/Bar_char_age_group_term_Deposit.png)
 
 ![Contact vs Term deposit](images/Bar_chart_contact_term_Deposit.png)

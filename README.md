@@ -20,6 +20,25 @@ Marital Status - for the termdeposit the bank was successful to sell the product
 Housing - Not significat difference between customers have mortagage loan or not
 Contact - For the termdeposit the bank was successful to sell the product to cellphone users vs telephone users
 
+To support the above observations following are the main charts
+![Age vs Term deposit](images/Bar_char_age_group_term_Deposit.png)
+
+![Contact vs Term deposit](images/Bar_chart_contact_term_Deposit.png)
+
+![Education vs Term deposit](images/Bar_chart_education_term_deposit.png)
+
+![Housing vs Term deposit](images/Bar_chart_housing_term_Deposit.png)
+
+![Job vs Term deposit](images/Bar_chart_job_term_deposit.png)
+
+![Loan vs Term deposit](images/Bar_chart_loan_term_Deposit.png)
+
+![Term deposit count](images/Bar_chart_term_deposit_count.png)
+
+![Marital Status vs Term deposit](images/Bar_chat_marital_status_term_deposit.png)
+
+![Box Plot Numerical Variables](images/Box_plot_numerical_variables.png)
+
 # Business Objective 
 From a business objective, of the task is to determine the factors could lead to a higher success rate, for example,
 The business goal is to identify the factors that lead to a higher campaign success rate. including factors like housing mortgage, contact method (cell phone, telephone), personal loans, age , job, university degree etc.
@@ -28,10 +47,36 @@ The campaigns show some success in some categories but the results doesn't seem 
 # Model Comparison Results
 For the baseline model, decided to use a DummyClassifer which is a very good choice as it just separates the classes.
 
+Following column transformer was created for the pipelines
+
+![Column Transformer ](images/Column_transformer.png)
 This model was compared with a Logistic Regression model, a statistical method used to examine how one or more independent variables influence a categorical dependent variable.
 
 In training, fitting and predicting both models on the dataset, the following results were observed:
-![Alt text](images/filename.png)
+![Models Results Table](images/Different_Models_test_train_table.png)
+
+Analysis of the  results from the model comparison, Logistic Regression out-performed all other models with lowest train time in seconds, highest training and testing accuracy scores.
+
+# GridSearchCV Based Model Improvements
+The following improvements were seen after running the different models to find the best hyperparameters for the models
+
+Improved LinearRegressions Results 
+Logistic Regression Accuracy: 0.886501578 
+Best Parameters {'model__C': 0.01, 'model__penalty': 'l1', 'model__solver': 'liblinear'} 
+Training Accuracy LR En 0.887556904400607 
+Test Accuracy LR En 0.8865015780529255
+
+Improved KNN Results 
+GS KNN Accuracy: 0.886137412 
+Best parameters {'model__n_neighbors': 18} 
+Training Accuracy KNN En 0.8880121396054628 
+Test Accuracy KNN En 0.8861374119932023
+
+Improved DT Results 
+GS DT Accuracy: 0.886501578 
+Best Parameters {'model__criterion': 'gini', 'model__max_depth': 3, 'model__min_samples_leaf': 1} 
+Training Accuracy DT En 0.887556904400607 
+Test Accuracy DT En 0.8865015780529255
 
 
 

@@ -79,5 +79,7 @@ Best Parameters {'model__criterion': 'gini', 'model__max_depth': 3, 'model__min_
 Training Accuracy DT En 0.887556904400607 
 Test Accuracy DT En 0.8865015780529255
 
-
-
+# Next steps and recommendations.
+Based on the model, it is found that these marketing campaigns were not really successful to attract enough products. One aspect which was apparent that the contact method did made a difference in the conversion rate of the customer to adopt a product which was the contact via cellular. 
+![Contact vs Term deposit](images/Bar_chart_contact_term_Deposit.png)
+One this that comes out of this is that the new methods of contacts including linkedin, facebook, snapchat, ticktok etc might be more useful in the new world to target customers.
